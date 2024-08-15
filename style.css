@@ -184,43 +184,50 @@ nav ul li a:hover::after{
 }
 
 /* ----------------services------------- */
-#services{
-    padding: 30px 0;
+#services {
+    padding: 30px 0; /* Espaço ao redor da seção 'services' */
 }
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+
+.services-list {
+    display: grid; /* Usar grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo: 3 colunas com largura mínima de 250px */
+    grid-gap: 40px; /* Espaçamento entre os blocos */
+    margin-top: 50px; /* Margem superior */
 }
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+
+.services-list div {
+    background: #262626; /* Cor de fundo dos blocos */
+    padding: 40px; /* Espaço interno nos blocos */
+    font-size: 13px; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background 0.5s, transform 0.5s; /* Transição suave para hover */
 }
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
+
+.services-list div i {
+    font-size: 50px; /* Tamanho dos ícones */
+    margin-bottom: 30px; /* Espaçamento inferior nos ícones */
 }
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+
+.services-list div h2 {
+    font-size: 30px; /* Tamanho dos títulos */
+    font-weight: 500; /* Peso dos títulos */
+    margin-bottom: 15px; /* Espaçamento inferior nos títulos */
 }
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+
+.services-list div a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Cor do texto dos links */
+    font-size: 12px; /* Tamanho da fonte dos links */
+    margin-top: 20px; /* Margem superior nos links */
+    display: inline-block; /* Comportamento de bloco inline */
 }
-.services-list div:hover{
-    background: #3390fa;
-    transform: translateY(-10px);
+
+.services-list div:hover {
+    background: #3390fa; /* Muda a cor de fundo ao passar o mouse */
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
 }
+
 
 /* -------portfolio----------- */
 #portfolio{
