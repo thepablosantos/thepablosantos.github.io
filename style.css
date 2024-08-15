@@ -198,8 +198,8 @@ nav ul li a:hover::after{
 .services-list div {
     background: #262626; /* Cor de fundo dos blocos */
     padding: 40px; /* Espaço interno nos blocos */
-    font-size: 13px; /* Tamanho da fonte */
-    font-weight: 300; /* Peso da fonte */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
     border-radius: 10px; /* Bordas arredondadas */
     transition: background 0.5s, transform 0.5s; /* Transição suave para hover */
 }
