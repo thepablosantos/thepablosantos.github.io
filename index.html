@@ -2,51 +2,241 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha página</title>
+    <title>Pablo Santos, Personal Portfolio</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Carregando a biblioteca FontAwesome -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Utilizando ícones do FontAwesome -->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- Utilizando ícones do FontAwesome -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst | Blockchain Engineer</p>
+                <h1>Hi, I'm <span>Pablo Santos</span><br> From Brazil</h1>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/pablo-santos-46794a269/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.notion.so/thepablosantos/Home-882a9ba67cfc44fba0bef04244c609fb" target="_blank"><img src="images/notion.png" alt="Notion"></a>
+                    <a href="https://github.com/thepablosantos" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+                    <a href="https://medium.com/@thepablosantos" target="_blank"><img src="images/medium.png" alt="Medium"></a>
+                </div>                           
+            </div>            
+        </div>
     </div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Pablo, a 30-year-old Data Analyst and certified Blockchain Engineer based in Dublin, Ireland. I'm passionate about leveraging technology to transform industries. With a background in financial analysis, I've been exploring the realm of data for over a year, mastering tools like PowerBI, SQL, Python, and more. Constantly learning, I believe in the power of data to drive impactful solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analyst</span><br>Data Visualization(Data Viz)<br>
+                            AWS (Amazon Web Services)<br>
+                            SQL (Structured Query Language)<br>
+                            Python for Data Analysis</li>
+                        <li><span>Blockchain Engineer</span><br>Development of Decentralized Applications (DApps)<br>
+                            Development with Hyperledger<br>
+                            Truffle Framework</li>
+                        <li><span>Web Development</span><br>Full-stack Web Development<br>
+                            RESTful API Development<br>
+                            Version Control (Git)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - 2023</span><br>Data Analyst at Smart Token</li>
+                        <li><span>2020 - 2021</span><br>Blockchain Developer at Bullmex</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>Analysis and systems development at Unisul SC</li>
+                        <li><span>2016</span><br>Data Analyst at EBAC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">How I Can Help You</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Data <br>Analyst</h2>
+                <p>Leverage my expertise in data analytics to provide insightful visualizations and meaningful interpretations of your data.</p>
+                <!--<a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Blockchain Engineer</h2>
+                <p>Bring your blockchain ideas to life with my skills in programming, decentralized application development, and proficiency in Hyperledger and Truffle Framework.</p>
+                <!--<a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Web <br>Solutions</h2>
+                <p>From conceptualizing and designing user-friendly interfaces to implementing robust backend systems, I can create and enhance your web presence.</p>
+                <!--<a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-11.png">
+                <div class="layer">
+                    <h3>Token ERC20</h3>
+                    <p>
+                        This project showcases the creation of a token through a smart contract, following a standard structure. The code includes detailed explanations throughout to facilitate understanding, making it accessible even for beginners in the field.</p>
+                    <a href="https://github.com/thepablosantos/token-erc20"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-22.png">
+                <div class="layer">
+                    <h3>Analyst Data</h3>
+                    <p>This project contains data and scripts related to an exercise involving gasoline prices over several days. The exercise's goal is to analyze and visualize gasoline price data using Python and popular libraries such as Pandas and Matplotlib.</p>
+                    <a href="https://github.com/thepablosantos/EBAC-Course"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-33.png">
+                <div class="layer">
+                    <h3>Website Restaurant</h3>
+                    <p>This is a website designed for a Greek restaurant in Ireland. It provides comprehensive information about the restaurant, its menu, location, and more.</p>
+                    <a href="https://github.com/thepablosantos/Landingpage/blob/main/index.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.notion.so/thepablosantos/Portfolio-d2f517d56f414868bf089bafab8555f7" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> contactmepablosantos@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +353 83-327-7187</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/pablo-santos-46794a269/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="https://docs.google.com/file/d/1_yWzRXYTmG7WesotTFBfXTkdABsFh5wf/edit?usp=docslist_api&filetype=msword" download class="btn btn2" target="_blank">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbxYMpjOzn096OyPcrD8QG0X5hRiUsfSu1UAiwHq00Vc1G2flPnZOQwtFmkwjjSDmmXn/exec" method="post">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+              
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Check out my <a class="fas fa-heart"> <a href="https://github.com/thepablosantos"> Github </a> </p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxYMpjOzn096OyPcrD8QG0X5hRiUsfSu1UAiwHq00Vc1G2flPnZOQwtFmkwjjSDmmXn/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+  
+      // Construa a URL com os dados do formulário
+      const formData = new FormData(form);
+      const url = `${scriptURL}?${new URLSearchParams(formData).toString()}`;
+  
+      // Crie um elemento de script para fazer a solicitação JSONP
+      const script = document.createElement('script');
+      script.src = url;
+  
+      // Adicione o script à página para fazer a solicitação
+      document.head.appendChild(script);
+  
+      // Reseta o formulário e mostra a mensagem de sucesso
+      msg.innerHTML = "Message sent successfully";
+      setTimeout(function() {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    });
+  </script>
+
 </body>
-    <h1>Titulo 1</h1>
-    <h2>Titulo 2</h2>
-    <h3>Titulo 3</h3>
-    <h6>Titulo 6</h6>
-
-    <p> aqui vai o texto</p>
-    <p> aqui vai o texto</p>
-    <p> aqui vai o texto</p>
-
-    <a href="https://www.nearx.com.br">NearX</a> <br>
-    <a href="https://www.nearx.com.br">NearX</a>
-
-    <p>Aqui temos nosso texto</p> <br> <p>agora um segundo texto abaixo</p>
-
-    <p>
-        <i>Itálico</i> <b>Negrito</b> <u>Sublinhado</u> <s>Tracejado</s>
-    </p>
-
-    <a href="https://www.nearx.com.br/sobre">NearX - Link absoluto</a><br>
-    <a href="sobre.html">Sobre - Link Relativo</a>
-
-    <div id="sobre">
-        <h2>Sobre nós</h2>
-        <p>Aqui vai o conteúdo sobre a empresa</p>
-    </div>
-
-    <div id="servicos">
-        <h2>Serviços</h2>
-        <p>Aqui vai o conteúdo sobre os serviços</p>
-    </div>
-
-    <div id="contato">
-        <h2>Contato</h2>
-        <p>Aqui vai o conteúdo sobre o contato</p>
-    </div>
 </html>
